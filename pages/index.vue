@@ -11,6 +11,7 @@
 import { postGetSiteApi } from "@/api/apis";
 const { getSiteApiSuccess } = useSiteDataStore();
 const { siteData } = storeToRefs(useSiteDataStore());
+console.log("siteData.value-----", siteData.value);
 await useAsyncData("test", async () => {
   const url = useRequestURL();
   const data = await postGetSiteApi({ reqUrl: url });

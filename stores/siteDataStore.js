@@ -12,6 +12,7 @@ export const useSiteDataStore = defineStore("useSiteData", () => {
 
   const getSiteApiSuccess = (payload) => {
     // const { data: testData } = payload || {};
+    console.log("payload", payload.data);
     siteDataInfo.value.data = payload.data;
     if (import.meta.client) {
       console.log("fuck");

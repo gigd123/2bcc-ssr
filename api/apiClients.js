@@ -15,12 +15,14 @@ const getDefaultPostData = ({ reqUrl }) => {
     origin =
       reqUrl?.hostname === "localhost"
         ? "https://dev-jolli.idndemo.com"
-        : reqUrl?.origin;
+        : "https://adobet88-dev.idndemo.com";
+    // : reqUrl?.origin;
   } else {
     origin =
       window.location.hostname === "localhost"
         ? "https://dev-jolli.idndemo.com"
-        : window.location.origin;
+        : "https://adobet88-dev.idndemo.com";
+    // : window.location.origin;
   }
 
   return {
