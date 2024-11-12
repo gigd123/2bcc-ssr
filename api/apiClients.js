@@ -17,9 +17,10 @@ const getDefaultPostData = ({ reqUrl }) => {
         ? "https://dev-jolli.idndemo.com"
         : reqUrl?.origin;
   } else {
-    window.location.hostname === "localhost"
-      ? "https://dev-jolli.idndemo.com"
-      : window.location.origin;
+    origin =
+      window.location.hostname === "localhost"
+        ? "https://dev-jolli.idndemo.com"
+        : window.location.origin;
   }
 
   return {
